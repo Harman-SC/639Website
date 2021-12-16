@@ -10,13 +10,11 @@ With the ongoing pandemic not slowing down as much as initially thought, it rema
 
 While the model we used may not be as accurate as the current state of the art, which we will touch on later, we found that this idea was the best way to make a real-world connection to the material we learned in class. We believe that for the time we were given and based off what we know as students, not professionals, that we created something we should be proud of. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ## Approach
 
 Originally in our proposal and in our mid-semester progress report, we stated that we wanted to try implementing the YOLOv3 model, and though we seriosuly tried to do so, we unfortunately ran into some problems implementing it, so we decided to switch over to our own simpler CNN model. We used TensorFlow and Keras to train this model based off a dataset consisting of over 4,000 images (2166 images with properly-masked people and 1931 images of individuals not masking properly). 
 
-Examples here 
+Examples: 
 
 ![image](masked.png)
 ![image](unmasked.png)
@@ -35,7 +33,13 @@ Feel free to also look at the presentation [here](https://docs.google.com/presen
 
 As stated before, our initial idea was to implement the YOLOv3 model, but we encountered a few problems along the way. Here are some of them.
 
+Add here
 
+## Other Links
+
+[Project Proposal](https://docs.google.com/document/d/1SuapIt2qn2yRM3lHKjUMKJwnN7TPx1Ui1NvxnjrIr0I/edit?usp=sharing) 
+
+[Midterm Progress Report](https://docs.google.com/document/d/1qgoP2MN_5OZ7F9PtP0Lrr-lns17X9DM5qZlm3ibzav8/edit?usp=sharing)
 
 ### Markdown
 
