@@ -19,6 +19,8 @@ Originally in our proposal and in our mid-semester progress report, we stated th
 ## Implementation
 Feel free to add stuff here 
 
+![image](image1.png)
+
 ## Results
 Add stuff
 
