@@ -16,6 +16,11 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Originally in our proposal and in our mid-semester progress report, we stated that we wanted to try implementing the YOLOv3 model, and though we seriosuly tried to do so, we unfortunately ran into some problems implementing it, so we decided to switch over to our own simpler CNN model. We used TensorFlow and Keras to train this model based off a dataset consisting of over 4,000 images (2166 images with properly-masked people and 1931 images of individuals not masking properly). 
 
+Examples here 
+
+![image](masked.png)
+![image](unmasked.png)
+
 ## Implementation
 Feel free to add stuff here 
 
