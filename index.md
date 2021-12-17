@@ -49,8 +49,19 @@ The data is then flattened by converting it to 1- dimensional array which is pas
 
 ## Results
 
+The model was then compiled using Adam optimizer.  We ran our model for 20 epochs with a batch size of 128. We were able to achieve an accuracy rate of about 96%. Model accuracy (how much of the data the model predicts correctly) initially increases rapidly, but then slowly levels off at higher epochs. Model Loss decreases as epochs increase. Model loss is the penalty for making an incorrect prediction.
+![image](result1.png)
 
-Feel free to also look at the presentation [here](https://docs.google.com/presentation/d/1l14B7fbgHDIT6jHU58RYDVzhiC0WSFaI7jZAeX67ut4/edit?usp=sharing) and our repo [here[(link.com) 
+We applied sample input images that has been processed using a previously built model.
+Here are sample images result images from prediction models.
+![image](face1.png)
+![image](face2.png)
+![image](face3.png)
+![image](face4.png)
+![image](face5.png)
+![image](face6.png)
+
+Feel free to also look at the presentation [here](https://docs.google.com/presentation/d/1l14B7fbgHDIT6jHU58RYDVzhiC0WSFaI7jZAeX67ut4/edit?usp=sharing) and our source code [Source Code](https://github.com/jkim574/Face_Mask_Detection)
 
 ## Problems Encountered
 
@@ -64,36 +75,7 @@ Add here
 
 [Midterm Progress Report](https://docs.google.com/document/d/1qgoP2MN_5OZ7F9PtP0Lrr-lns17X9DM5qZlm3ibzav8/edit?usp=sharing)
 
-[Source Code](https://github.com/jkim574/Face_Mask_Detection)
+## Sources
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Harman-SC/639Website/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Below is a list of names and links to open source databases of mask and without mask images used in this project.
+https://data-flair.training/blogs/download-face-mask-data/
