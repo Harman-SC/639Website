@@ -2,26 +2,27 @@
 
 This project was implemented using Keras and TensorFlow where the CNN (Convolutional Neural Network) model was trained for face mask detection.
 
+
 ## Why Face Mask Detection?
 
-With the ongoing pandemic not slowing down as much as initially thought, it remains vital to ensure that the services and buildings that need extra security have it. Being in a college campus with over 40,000 students means that often times, academic and social buildings will require students to be in close proximity to each other indoors, and with new variants of COVID-19 popping up, we think that face mask detection is more crucial here and around the world more than ever. 
+With the ongoing pandemic not slowing down as much as initially thought, it remains vital to ensure that the services and buildings that need extra security have it. Being in a college campus with over 40,000 students means that often times, academic and social buildings will require students to be in close proximity to each other indoors, and with new variants of COVID-19 popping up, we think that face mask detection is more crucial here and around the world more than ever. Many of these establishments are working towards the automation of detecting such violations, thereby reducing the time and labour spent for the same. The main aim of this project is to detect violations such as not wearing a mask
+
 
 ## So Why Us?
 
 While the model we used may not be as accurate as the current state of the art, which we will touch on later, we found that this idea was the best way to make a real-world connection to the material we learned in class. We believe that for the time we were given and based off what we know as students, not professionals, that we created something we should be proud of. 
 
+
 ## Approach
 
-Originally in our proposal and in our mid-semester progress report, we stated that we wanted to try implementing the YOLOv3 model, and though we seriosuly tried to do so, we unfortunately ran into some problems implementing it, so we decided to switch over to our own simpler CNN model. We used TensorFlow and Keras to train this model based off a dataset consisting of over 4,000 images (2166 images with properly-masked people and 1931 images of individuals not masking properly). 
+Originally in our proposal and in our mid-semester progress report, we stated that we wanted to try implementing the YOLOv3 model, and though we seriosuly tried to do so, we unfortunately ran into some problems implementing it, so we decided to switch over to simpler CNN model. We used TensorFlow and Keras to train this model based off a dataset consisting of over 4,000 images (2166 images with properly-masked people and 1931 images of individuals not masking properly). The program is split into 4 parts: data collecting,  building the model, testing the model, and finally implement the model. The neural network takes in the input image processes it and classifies it under two categories: mask and no mask. The model was trained using 2166 images, 1931 images each for “with mask” and “without mask” categories.
 
-Examples: 
-
-![image](masked.png)
-![image](unmasked.png)
 
 ## Implementation
-Data Collection
+- Data Collection
 First, we gathered mask and without mask images from open source databases, Kaggle dataset and the Real-World Masked Face dataset (RMFD)
+<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/masked.png" width=300 height=300 align=right>
+<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/unmasked.png" width=300 height=300 align=right>
 
 - Preprocessing
 Images are preprocessed to make them the same shape.
@@ -47,6 +48,7 @@ The data is then flattened by converting it to 1- dimensional array which is pas
 
 ![image](image1.png)
 
+
 ## Results
 
 The model was then compiled using Adam optimizer.  We ran our model for 20 epochs with a batch size of 128. We were able to achieve an accuracy rate of about 96%. Model accuracy (how much of the data the model predicts correctly) initially increases rapidly, but then slowly levels off at higher epochs. Model Loss decreases as epochs increase. 
@@ -63,11 +65,14 @@ Here are sample images result images from prediction models.
 <img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face5.png" width=300 height=300 align=right>
 <img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face6.png" width=300 height=300 align=right>
 
+
 Feel free to also look at the presentation [here](https://docs.google.com/presentation/d/1l14B7fbgHDIT6jHU58RYDVzhiC0WSFaI7jZAeX67ut4/edit?usp=sharing) and our source code [Source Code](https://github.com/jkim574/Face_Mask_Detection)
+
 
 ## Problems Encountered
 
 As stated before, our initial idea was to implement the YOLOv3 model, but we encountered a few problems along the way. YOLO is a clever convolutional neural network (CNN) for doing object detection in real-time. The algorithm applies a single neural network to the full image, and then divides the image into regions and predicts bounding boxes and probabilities for each region. It becomes very difficult to train these models, keeping in mind the diversity of camera angles in images and mask types, so this issue pops out as a challenge for us.
+
 
 ## ResNet-50
 Adding more layers to the CNNs can solve complicated tasks in computer vision, deeper neural networks are more difficult to train. But ResNet enables to train very deep neural networks.
@@ -86,6 +91,7 @@ With ResNet, we were able to achieve very high performance after only running 10
 [Project Proposal](https://docs.google.com/document/d/1SuapIt2qn2yRM3lHKjUMKJwnN7TPx1Ui1NvxnjrIr0I/edit?usp=sharing) 
 
 [Midterm Progress Report](https://docs.google.com/document/d/1qgoP2MN_5OZ7F9PtP0Lrr-lns17X9DM5qZlm3ibzav8/edit?usp=sharing)
+
 
 ## Sources
 
