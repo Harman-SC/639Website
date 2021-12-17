@@ -49,25 +49,37 @@ The data is then flattened by converting it to 1- dimensional array which is pas
 
 ## Results
 
-The model was then compiled using Adam optimizer.  We ran our model for 20 epochs with a batch size of 128. We were able to achieve an accuracy rate of about 96%. Model accuracy (how much of the data the model predicts correctly) initially increases rapidly, but then slowly levels off at higher epochs. Model Loss decreases as epochs increase. Model loss is the penalty for making an incorrect prediction.
-![image](result1.png)
+The model was then compiled using Adam optimizer.  We ran our model for 20 epochs with a batch size of 128. We were able to achieve an accuracy rate of about 96%. Model accuracy (how much of the data the model predicts correctly) initially increases rapidly, but then slowly levels off at higher epochs. Model Loss decreases as epochs increase. 
+<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/result1.png" width=600 height=300 align=center>
+
 
 We applied sample input images that has been processed using a previously built model.
 Here are sample images result images from prediction models.
-![image](face1.png)
-![image](face2.png)
-![image](face3.png)
-![image](face4.png)
-![image](face5.png)
-![image](face6.png)
+
+<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face1.png" width=300 height=300 align=right>
+<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face2.png" width=300 height=300 align=right> 
+<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face3.png" width=300 height=300 align=right>
+<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face4.png" width=300 height=300 align=right>
+<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face5.png" width=300 height=300 align=right>
+<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face6.png" width=300 height=300 align=right>
 
 Feel free to also look at the presentation [here](https://docs.google.com/presentation/d/1l14B7fbgHDIT6jHU58RYDVzhiC0WSFaI7jZAeX67ut4/edit?usp=sharing) and our source code [Source Code](https://github.com/jkim574/Face_Mask_Detection)
 
 ## Problems Encountered
 
-As stated before, our initial idea was to implement the YOLOv3 model, but we encountered a few problems along the way. Here are some of them.
+As stated before, our initial idea was to implement the YOLOv3 model, but we encountered a few problems along the way. YOLO is a clever convolutional neural network (CNN) for doing object detection in real-time. The algorithm applies a single neural network to the full image, and then divides the image into regions and predicts bounding boxes and probabilities for each region. It becomes very difficult to train these models, keeping in mind the diversity of camera angles in images and mask types, so this issue pops out as a challenge for us.
 
-Add here
+## ResNet-50
+Adding more layers to the CNNs can solve complicated tasks in computer vision, deeper neural networks are more difficult to train. But ResNet enables to train very deep neural networks.
+
+A residual neural network (ResNet) is an artificial neural network of a kind that stacks residual blocks on top of each other to form a network.
+ResNet-50 is the state-of-the-art implementation of a convolutional neural network used for classifying images.  ResNet-50 model is a convolutional neural network (CNN) that is 50 layers deep.
+
+<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/result2.png" width=300 height=300 align=center>
+
+With ResNet, we were able to achieve very high performance after only running 10 epochs. In the end, ResNet was able to achieve around 99% accuracy rate. Although ResNEt performed way much better result, we were still able to achieve satisfactory performance. Our analysis of the current circumstance presents a chance to be more ready for the next crisis, or to evaluate the effects of huge scope social change.
+
+
 
 ## Other Links
 
@@ -78,4 +90,5 @@ Add here
 ## Sources
 
 Below is a list of names and links to open source databases of mask and without mask images used in this project.
-https://data-flair.training/blogs/download-face-mask-data/
+- https://data-flair.training/blogs/download-face-mask-data/
+- [ResNet-50](https://viso.ai/deep-learning/resnet-residual-neural-network/)
