@@ -1,6 +1,6 @@
 ## Our Project
 
-We spent this semester working on a face mask detector, using our own CNN model. The purpose is pretty self-explanatory: it simply detects whether a face mask is being worn properly or not. 
+This project was implemented using Keras and TensorFlow where the CNN (Convolutional Neural Network) model was trained for face mask detection.
 
 ## Why Face Mask Detection?
 
@@ -20,7 +20,17 @@ Examples:
 ![image](unmasked.png)
 
 ## Implementation
-[Source Code](https://github.com/jkim574/Face_Mask_Detection)
+Data Collection
+First, we gathered mask and without mask images from open source databases, Kaggle dataset and the Real-World Masked Face dataset (RMFD)
+
+Preprocessing
+Images are preprocessed to make them the same shape.
+Next, they are grouped into training/test images.
+
+Building and Training the model
+Creating and building the model produces an untrained neural network (CNN in our case).
+Training the model uses the images and labels to “train” the data.
+![image](img1.png)
 
 ![image](image1.png)
 
@@ -40,6 +50,8 @@ Add here
 [Project Proposal](https://docs.google.com/document/d/1SuapIt2qn2yRM3lHKjUMKJwnN7TPx1Ui1NvxnjrIr0I/edit?usp=sharing) 
 
 [Midterm Progress Report](https://docs.google.com/document/d/1qgoP2MN_5OZ7F9PtP0Lrr-lns17X9DM5qZlm3ibzav8/edit?usp=sharing)
+
+[Source Code](https://github.com/jkim574/Face_Mask_Detection)
 
 ### Markdown
 
