@@ -23,14 +23,29 @@ Examples:
 Data Collection
 First, we gathered mask and without mask images from open source databases, Kaggle dataset and the Real-World Masked Face dataset (RMFD)
 
-Preprocessing
+**Bold** Preprocessing
 Images are preprocessed to make them the same shape.
 Next, they are grouped into training/test images.
 
-Building and Training the model
+**Bold** Building and Training the model
 Creating and building the model produces an untrained neural network (CNN in our case).
 Training the model uses the images and labels to “train” the data.
 ![image](img1.png)
+
+**Bold** Convolution
+We used Convolutional neural networks to extract features from images that we can feed through a traditional neural network to get a predicted output. Convolution works by iterating a small filter over the entire image and storing its output matrix that will then be used for the next layer.
+
+**Bold** Relu Functions
+The network consists of two convolution layers each followed by a Rectified Linear Unit activation function and a max pooling layer.
+Rectified Linear Unit function is introduced for non-linearity in the convolutional network. It is the most widely used activation function for computer vision and is useful feature extraction.
+
+**Bold** Max Pooling
+Pooling layers is used after a few Convolutional Layers. It will reduce the dimension of the convolution matrices making it faster. Max pooling is the most widely used type of pooling for computer vision problems, and will take the largest element from the rectified feature map.
+
+**Bold** Flatten Layers
+The data is then flattened by converting it to 1- dimensional array which is passed as the input to the final output layer. To help prevent overfitting, the network ignores a certain percentage of neurons during training. The final output layer takes the values and transforms them into a probability distribution, this is achieved with the help of softmax function.The final prediction will be based on the class that has the highest probability.
+
+
 
 ![image](image1.png)
 
