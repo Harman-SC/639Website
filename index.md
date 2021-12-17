@@ -65,7 +65,6 @@ Here are sample images result images from prediction models.
 <img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face5.png" width=300 height=300 align=right>
 <img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face6.png" width=300 height=300 align=right>
 
-
 Feel free to also look at the presentation [here](https://docs.google.com/presentation/d/1l14B7fbgHDIT6jHU58RYDVzhiC0WSFaI7jZAeX67ut4/edit?usp=sharing) and our source code [Source Code](https://github.com/jkim574/Face_Mask_Detection)
 
 
