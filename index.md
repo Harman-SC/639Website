@@ -21,8 +21,8 @@ Originally in our proposal and in our mid-semester progress report, we stated th
 ## Implementation
 - Data Collection
 First, we gathered mask and without mask images from open source databases, Kaggle dataset and the Real-World Masked Face dataset (RMFD)
-<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/masked.png" width=300 height=300 align=right>
-<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/unmasked.png" width=300 height=300 align=right>
+![image](masked.png)
+![image](unmasked.png)
 
 - Preprocessing
 Images are preprocessed to make them the same shape.
@@ -52,18 +52,18 @@ The data is then flattened by converting it to 1- dimensional array which is pas
 ## Results
 
 The model was then compiled using Adam optimizer.  We ran our model for 20 epochs with a batch size of 128. We were able to achieve an accuracy rate of about 96%. Model accuracy (how much of the data the model predicts correctly) initially increases rapidly, but then slowly levels off at higher epochs. Model Loss decreases as epochs increase. 
-<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/result1.png" width=600 height=300 align=center>
+![image](result1.png)
 
 
 We applied sample input images that has been processed using a previously built model.
 Here are sample images result images from prediction models.
 
-<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face1.png" width=300 height=300 align=right>
-<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face2.png" width=300 height=300 align=right> 
-<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face3.png" width=300 height=300 align=right>
-<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face4.png" width=300 height=300 align=right>
-<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face5.png" width=300 height=300 align=right>
-<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/face6.png" width=300 height=300 align=right>
+![image](face1.png)
+![image](face2.png)
+![image](face3.png)
+![image](face4.png)
+![image](face5.png)
+![image](face6.png)
 
 
 ## Problems Encountered
