@@ -77,7 +77,7 @@ Adding more layers to the CNNs can solve complicated tasks in computer vision, d
 A residual neural network (ResNet) is an artificial neural network of a kind that stacks residual blocks on top of each other to form a network.
 ResNet-50 is the state-of-the-art implementation of a convolutional neural network used for classifying images.  ResNet-50 model is a convolutional neural network (CNN) that is 50 layers deep.
 
-<img src="https://github.com/Harman-SC/Face-Mask-Detection/blob/gh-pages/result2.png" width=300 height=300 align=center>
+![image](result2.png)
 
 With ResNet, we were able to achieve very high performance after only running 10 epochs. In the end, ResNet was able to achieve around 99% accuracy rate. Although ResNEt performed way much better result, we were still able to achieve satisfactory performance. Our analysis of the current circumstance presents a chance to be more ready for the next crisis, or to evaluate the effects of huge scope social change.
 
